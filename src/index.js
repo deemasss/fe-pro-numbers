@@ -69,9 +69,9 @@ export const getFixedValue = (number, accuracy) => {
  */
 export const getFlooroCeil = (number) => {
 
-    let integerNum = Number(number.toFixed(0));
-    let floorNum = Math.floor(integerNum);
-    let ceilNum = Math.ceil(integerNum);
+    let integerNum = parseInt(number);
+    let floorNum = Math.floor(number);
+    let ceilNum = Math.ceil(number);
 
     if (integerNum % 2 !== 0) {
         return floorNum;
