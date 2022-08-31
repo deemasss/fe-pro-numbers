@@ -69,13 +69,14 @@ export const getFixedValue = (number, accuracy) => {
  */
 export const getFloorCeil = (number) => {
     
+    let iNum = Math.trunc(number)
     let floorNum = Math.floor(number)
     let ceilNum = Math.ceil(number)
 
-    if (parseInt(number) % 2 !== 0) {
-        return floorNum
-    } else if (parseInt(number) % 2 === 0) {
+    if (iNum % 2 !== 0) {
         return ceilNum
+    } else if (iNum % 2 === 0) {
+        return floorNum
     }
 
 };
