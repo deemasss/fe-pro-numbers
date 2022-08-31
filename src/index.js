@@ -67,7 +67,7 @@ export const getFixedValue = (number, accuracy) => {
  * @param {number} number
  * @returns {number}
  */
-export const getFloorCeil = (number) => {
+export const getFlooroCeil = (number) => {
     
     let iNum = Math.trunc(number)
     let floorNum = Math.floor(number)
