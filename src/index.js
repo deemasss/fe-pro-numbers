@@ -67,18 +67,17 @@ export const getFixedValue = (number, accuracy) => {
  * @param {number} number
  * @returns {number}
  */
-export const getFlooroCeil = (number) => {
+export const getFloorCeil = (number) => {
 
-    let integerNum = parseInt(number);
-    let floorNum = Math.floor(number);
-    let ceilNum = Math.ceil(number);
+    let integerNum = parseInt(number)
+    let floorNum = Math.floor(number)
+    let ceilNum = Math.ceil(number)
 
     if (integerNum % 2 !== 0) {
-        return floorNum;
+        return Number(floorNum)
     } else if (integerNum % 2 === 0) {
-        return ceilNum;
+        return Number(ceilNum)
     }
-
 
 };
 
