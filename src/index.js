@@ -54,8 +54,10 @@ export const getSquareOfCircle = (radius) => {
  */
 export const getFixedValue = (number, accuracy) => {
 
-    let fixedNum = Number(number.toFixed(accuracy));
-    return Number(Math.round(fixedNum));
+    let fixedNum = number.toFixed(accuracy);
+    let toNum = Number(fixedNum);
+    Math.round(toNum)
+    return toNum;
 
 };
 
@@ -67,14 +69,15 @@ export const getFixedValue = (number, accuracy) => {
  */
 export const getFlooroCeil = (number) => {
 
-    let integerNum = Number((number.toFixed(0)));
+    let integerNum = number.toFixed(0);
+    let numFromInteger = Number(integerNum)
 
-    if (integerNum % 2 !== 0) {
-        let floorNum = Math.floor(number);
-        return Number(floorNum);
-    } else if (integerNum % 2 === 0) {
-        let ceilNum = Math.ceil(number);
-        return Number(ceilNum);
+    if (numFromInteger % 2 !== 0) {
+        Math.floor(number);
+        return number;
+    } else if (numFromInteger % 2 === 0) {
+        Math.ceil(number);
+        return number;
     }
 
 };
