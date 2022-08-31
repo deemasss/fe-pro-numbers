@@ -71,13 +71,13 @@ export const getFlooroCeil = (number) => {
 
     let integerNum = number.toFixed(0);
     let numFromInteger = Number(integerNum)
+    let floorNum = Math.floor(number);
+    let ceilNum = Math.ceil(number);
 
     if (numFromInteger % 2 !== 0) {
-        Math.floor(number);
-        return number;
+        return floorNum;
     } else if (numFromInteger % 2 === 0) {
-        Math.ceil(number);
-        return number;
+        return ceilNum;
     }
 
 };
