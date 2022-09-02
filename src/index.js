@@ -74,9 +74,9 @@ export const getFlooroCeil = (number) => {
     let ceilNum = Math.ceil(number)
 
     if (iNum % 2 === 0) {
-        console.log(floorNum)
+        return floorNum
     } else if (iNum % 2 !== 0) {
-        console.log(ceilNum)
+        return ceilNum
     }
 
 };
