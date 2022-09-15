@@ -7,8 +7,8 @@
  * @param {number} maxSecond
  * @returns {number}
  */
- export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
-    
+export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
+
     let minMaxMultiply = Math.min(minFirst, minSecond) * Math.max(maxFirst, maxSecond)
     return minMaxMultiply;
 
@@ -22,7 +22,7 @@
  * @returns {number}
  */
 export const getSquareOfCircle = (radius) => {
-    
+
     let square = Math.PI * (radius ** 2);
     return square;
 
@@ -38,9 +38,8 @@ export const getSquareOfCircle = (radius) => {
  */
 export const getFixedValue = (number, accuracy) => {
 
-    let fixedNum = number.toFixed(accuracy);
-    let toNum = Math.round(fixedNum);
-    return toNum;
+    let fixedNum = Math.round(number.toFixed(accuracy))
+    return fixedNum;
 
 };
 
@@ -51,7 +50,7 @@ export const getFixedValue = (number, accuracy) => {
  * @returns {number}
  */
 export const getFlooroCeil = (number) => {
-    
+
     let iNum = Math.trunc(number)
     let floorNum = Math.floor(number)
     let ceilNum = Math.ceil(number)
