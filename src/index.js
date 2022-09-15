@@ -38,8 +38,7 @@ export const getSquareOfCircle = (radius) => {
  */
 export const getFixedValue = (number, accuracy) => {
 
-    let fixNum = Math.round(number.toFixed(accuracy));
-    return fixNum;
+    return Math.round((number * Math.pow(10, accuracy))/Math.pow(10, accuracy));
 
 };
 
